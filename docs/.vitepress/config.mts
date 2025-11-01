@@ -1,24 +1,29 @@
+// https://vitepress.dev/reference/site-config
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "CP Bin File Generation",
-  description: "Cross‑platform tutorial to generate dummy .bin files for performance benchmarking, speed testing, or storage validation on 🪟 Windows, 🐧 Linux, and 🍎 macOS. All commands work directly in the terminal, no downloads, no scripts, no waiting.",
+  // Site Metadata
+  title: "Cross‑Platform BIN File Generation",
+  description: "A cross‑platform guide for generating dummy .bin files for performance benchmarking, speed testing, or storage validation on 🪟 Windows, 🐧 Linux, and 🍎 macOS. All commands work directly in the terminal — no downloads, no scripts, no waiting.",
+  base: "/Cross-Platform-Dummy-Bin-File/",
+
+  // Theme Configurations
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: 'assets/img/logo.svg',
+    logo: '/assets/img/logo.svg',
+
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/introduction' }
     ],
 
     sidebar: [
       {
         items: [
-          { text: 'Introduction', link: '/introduction'},
+          { text: 'Introduction', link: '/introduction' },
           { text: 'Windows', link: '/windows' },
           { text: 'Linux', link: '/linux' },
-          { text: 'MacOS', link: '/macos' },
+          { text: 'macOS', link: '/macos' },
           { text: 'Others', link: '/others' }
           /*
           { text: 'Markdown Examples', link: '/markdown-examples' },
@@ -29,7 +34,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/MRCYODev' }
+      { icon: 'github', link: 'https://github.com/MRCYODev/Cross-Platform-Dummy-Bin-File' }
     ]
   }
 })
