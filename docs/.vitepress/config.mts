@@ -5,7 +5,7 @@ export default defineConfig({
   // Site Metadata
   title: "Cross‑Platform BIN File Generation",
   description: "A cross‑platform guide for generating dummy .bin files for performance benchmarking, speed testing, or storage validation on 🪟 Windows, 🐧 Linux, and 🍎 macOS. All commands work directly in the terminal — no downloads, no scripts, no waiting.",
-  base: "/docs/",
+  base: "/Cross-Platform-Dummy-Bin-File/",
 
   // Theme Configurations
   themeConfig: {
