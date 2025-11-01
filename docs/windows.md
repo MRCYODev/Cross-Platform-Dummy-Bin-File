@@ -1,18 +1,24 @@
-# 💾 Cross‑Platform Dummy BIN File Generator
-
-Cross‑platform tutorial to generate dummy .bin files for performance benchmarking, speed testing, or storage validation on **Windows**, **Linux**, and **macOS**. All commands work directly in the terminal,  no downloads, no scripts, no waiting.
-
----
-
-## 🪟 Windows
+## Windows Commands
 
 > Works in **CMD/Terminal**, **PowerShell**.
 
-### Basic Command
+### Command
+
+```powershell
+fsutil file createnew test.bin 104857600
+```
+> The generated .bin file it would be 100MB
+---
+```powershell
+fsutil file createnew test.bin 1073741824
+```
+> The generated .bin file it would be 1GB (1024MB, 1048576 KB, 1073741824B)
+---
 ```powershell
 fsutil file createnew test.bin 10737418240
 ```
 > The generated .bin file it would be 10GB
+---
 
 > [!TIP]
 > You can use any of the supported metric or binary ``for Example, 1024 Bytes = 1 Kilobyte`` units below to fit your test case.
@@ -29,9 +35,18 @@ TB
 > Windows creates files using byte counts by default.
 > For human‑readable units, newer versions of **PowerShell 5+** support suffixes like `B,` `KB,` `MB,` `GB,` `TB.`
 
-### Modern PowerShell 
+### Modern PowerShell
+
+```powershell
+fsutil file createnew test.bin 100MB
+```
+```powershell
+fsutil file createnew test.bin 1GB
+```
+
 ```powershell
 fsutil file createnew test.bin 10GB
 ```
 
-
+> [!NOTE]
+> Also these commands works on *`Terminal - Command Prompt`*
