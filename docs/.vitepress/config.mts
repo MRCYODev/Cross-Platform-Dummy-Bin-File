@@ -1,15 +1,11 @@
-// https://vitepress.dev/reference/site-config
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // Site Metadata
+  base: "/Cross-Platform-Dummy-Bin-File/",
   title: "Cross‑Platform BIN File Generation",
   description: "A cross‑platform guide for generating dummy .bin files for performance benchmarking, speed testing, or storage validation on 🪟 Windows, 🐧 Linux, and 🍎 macOS. All commands work directly in the terminal — no downloads, no scripts, no waiting.",
-  base: "/Cross-Platform-Dummy-Bin-File/",
-
-  // Theme Configurations
+ 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: '/assets/img/logo.svg',
 
     nav: [
@@ -25,10 +21,6 @@ export default defineConfig({
           { text: 'Linux', link: '/linux' },
           { text: 'macOS', link: '/macos' },
           { text: 'Others', link: '/others' }
-          /*
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-          */
         ]
       }
     ],
